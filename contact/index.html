@@ -29,7 +29,7 @@
                             <li class="nav-item"><a class="nav-link" href="../">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="../resume/">Resume</a></li>
                             <li class="nav-item"><a class="nav-link" href="../projects/">Projects</a></li>
-<!--                            <li class="nav-item"><a class="nav-link" href="">Contact</a></li>-->
+                           <li class="nav-item"><a class="nav-link" href="../contact/">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -53,29 +53,30 @@
                                 <!-- To make this form functional, sign up at-->
                                 <!-- https://startbootstrap.com/solution/contact-forms-->
                                 <!-- to get an API token!-->
-                                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                <!-- <form id="contactForm" data-sb-form-api-token="API_TOKEN"> -->
+                                <form id="contactForm" action="mailto:ptiandika@gmail.com" method="get" enctype="text/plain">
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                        <label for="name">Full name</label>
-                                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                        <input name="subject" class="form-control" id="name" type="text" placeholder="Enter subject..." data-sb-validations="required" required/>
+                                        <label for="name">Subject</label>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">A subject is required.</div>
                                     </div>
                                     <!-- Email address input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                    <!-- <div class="form-floating mb-3">
+                                        <input name="email" class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" required/>
                                         <label for="email">Email address</label>
                                         <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                         <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                                    </div>
+                                    </div> -->
                                     <!-- Phone number input-->
-                                    <div class="form-floating mb-3">
-                                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                    <!-- <div class="form-floating mb-3">
+                                        <input name="phone" class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" required/>
                                         <label for="phone">Phone number</label>
                                         <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                                    </div>
+                                    </div> -->
                                     <!-- Message input-->
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                        <textarea name="body" class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required" required></textarea>
                                         <label for="message">Message</label>
                                         <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                     </div>
@@ -97,9 +98,17 @@
                                     <!-- an error submitting the form-->
                                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                     <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div>
                                 </form>
                             </div>
+                        </div>
+                        <div class="d-flex justify-content-center fs-2 gap-4 p-5">
+                            <!-- <a class="text-gradient" href="mailto:ptiandika@gmail.com" target="blank"><i class="bi bi-envelope"></i></a> -->
+                            <a class="text-gradient" href="https://github.com/Dika1485" target="blank"><i class="bi bi-github"></i></a>
+                            <a class="text-gradient" href="https://www.instagram.com/dika_i4" target="blank"><i class="bi bi-instagram"></i></a>
+                            <a class="text-gradient" href="https://wa.me/+6282226536669" target="blank"><i class="bi bi-whatsapp"></i></a>
+                            <a class="text-gradient" href="https://t.me/+6282226536669" target="blank"><i class="bi bi-telegram"></i></a>
+                            <a class="text-gradient" href="https://www.facebook.com/priandika.ratmadanianugrah.3" target="blank"><i class="bi bi-facebook"></i></a>
                         </div>
                     </div>
                 </div>
